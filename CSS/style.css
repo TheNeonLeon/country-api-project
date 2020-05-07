@@ -16,7 +16,8 @@ body{
 }
 .input-field{
     margin-top: 2rem;
-}
-#search-icon{
     margin-left: 2rem;
+}
+#btn{
+    margin-left: -1rem;
 }

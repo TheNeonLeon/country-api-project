@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+}
+.header{
+    display: flex;
+    border-style: solid;
+    border-color: rgb(216, 216, 216);
+    border-top: white;
+    border-left: white;
+    border-right: white;
+    padding: 0.2rem;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.title{
+    padding-left: 2rem;
+}
+.input-field{
+    margin-top: 2rem;
+}
+#search-icon{
+    margin-left: 2rem;
+}

@@ -1,7 +1,4 @@
-document.getElementById('btn').addEventListener('click', loadData);
-
-loadData = () => {
-
+document.getElementById('btn').addEventListener('click', loadData => {
     fetch('https://restcountries.eu/rest/v2/all')
     .then(Response => Response.json())
     .then(data => {
@@ -11,6 +8,6 @@ loadData = () => {
             <li>${element.name}</li>
             `;
         });
+        document.getElementById('list').innerHTML = html;
     });
-    document.getElementById('list').innerHTML = html;
-}
+});

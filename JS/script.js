@@ -1,4 +1,4 @@
-document.getElementById('btn').addEventListener('click', loadData => {
+document.getElementById('show-btn').addEventListener('click', loadData => {
     fetch('https://restcountries.eu/rest/v2/all')
     .then(Response => Response.json())
     .then(data => {

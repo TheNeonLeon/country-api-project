@@ -16,10 +16,19 @@ document.querySelector("li").addEventListener("click", onClick => {
     console.log("test");
 });
 //iterate through countries and filter by search query
-document.querySelector(".search-btn").addEventListener('click', filterCountry => {
+document.querySelector(".input-field").addEventListener('onkeyup', filterCountry => {
+    let input = document.querySelector('.input-field');
     let ul = document.getElementById("list");
     let li = ul.getElementsByTagName('li');
-    for (i = 0; i < li.length; i++) {
+    let filter = input.value.toUpperCase();
 
+    for (i = 0; i < li.length; i++) {
+        var list = li[i].getElementsByTagName("li")[0];
+        var txtValue = list.textContent || list.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        }else {
+            li[i].style.display = "none";
+        }
     }
 })

@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    display: grid;
+    padding: 0;
 }
 .header{
     display: flex;
@@ -14,6 +14,10 @@ body{
 }
 .title{
     padding-left: 2rem;
+}
+.about{
+    margin-left: 57rem;
+    cursor: pointer;
 }
 .input-field{
     margin-top: 2rem;
@@ -38,4 +42,8 @@ li{
     border-style: solid;
     border-color: hsl(0, 0%, 98%);
     box-shadow: 5px 3px 3px rgb(116, 116, 116);
+}
+a{
+    text-decoration: none;
+    color: black;
 }

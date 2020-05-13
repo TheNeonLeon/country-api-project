@@ -7,6 +7,7 @@ document.getElementById('show-btn').addEventListener('click', loadData => {
             html += `
             <li>${element.name}</li>
             `;
+            console.log(Response, data);
         });
         document.getElementById('list').innerHTML = html;
     });
@@ -31,4 +32,7 @@ document.querySelector(".input-field").addEventListener('onkeyup', filterCountry
             li[i].style.display = "none";
         }
     }
+})
+document.getElementById('list').addEventListener('click', clickInfo => {
+    
 })

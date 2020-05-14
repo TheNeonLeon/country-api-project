@@ -5,7 +5,7 @@ document.getElementById('show-btn').addEventListener('click', loadData => {
         let html = '';
         data.forEach(element => {
             html += `
-            <li>${element.name}</li>
+            <li>${element.name} population: ${element.population}</li>
             `;
             console.log(Response, data);
         });

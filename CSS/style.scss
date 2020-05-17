@@ -1,0 +1,54 @@
+$btnColor: rgb(240, 230, 230);
+
+.show-btn{
+    background-color: $btnColor;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: flex;
+    border-style: solid;
+    border-color: rgb(216, 216, 216);
+    border-top: white;
+    border-left: white;
+    border-right: white;
+    padding: 0.2rem;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.title{
+    padding-left: 2rem;
+}
+.about{
+    margin-left: 57rem;
+    cursor: pointer;
+}
+.input-field{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+.search-btn{
+    margin-left: -0.4rem;
+}
+#btn{
+    margin-left: -1rem;
+}
+#list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 2rem;
+}
+li{
+    padding: 1rem;
+    margin: 1rem;
+    border-style: solid;
+    border-color: hsl(0, 0%, 98%);
+    box-shadow: 5px 3px 3px rgb(116, 116, 116);
+}
+a{
+    text-decoration: none;
+    color: black;
+}

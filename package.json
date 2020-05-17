@@ -1,0 +1,19 @@
+{
+  "name": "country-api-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheNeonLeon/country-api-project.git"
+  },
+  "author": "Leon Listo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheNeonLeon/country-api-project/issues"
+  },
+  "homepage": "https://github.com/TheNeonLeon/country-api-project#readme"
+}

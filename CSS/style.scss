@@ -1,4 +1,6 @@
 $btnColor: rgb(240, 230, 230);
+$mainColor: rgb(255, 255, 255);
+$headerColor: rgb(247, 247, 247);
 
 .show-btn{
     background-color: $btnColor;
@@ -6,6 +8,7 @@ $btnColor: rgb(240, 230, 230);
 body{
     margin: 0;
     padding: 0;
+    background-color: $mainColor;
 }
 .header{
     display: flex;
@@ -16,13 +19,13 @@ body{
     border-right: white;
     padding: 0.2rem;
     font-family: 'Nunito Sans', sans-serif;
+    background-color: $headerColor;
 }
 .title{
     padding-left: 2rem;
 }
 .about{
     margin-left: 57rem;
-    cursor: pointer;
 }
 .input-field{
     margin-top: 2rem;

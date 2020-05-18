@@ -5,13 +5,16 @@ document.getElementById('show-btn').addEventListener('click', loadData => {
         let html = '';
         data.forEach(element => {
             html += `
-            <li>${element.name} population: ${element.population}</li>
+            <li><img src="${element.flag}" <br> ${element.name} <br> population: ${element.population}</li>
             `;
             console.log(Response, data);
+            console.log(data[0].flag);
         });
         document.getElementById('list').innerHTML = html;
     });
+    trycatch(error => console.error(error))
 });
+
 //make every list show more info when clicked
 document.querySelector("li").addEventListener("click", onClick => {
     console.log("test");

@@ -57,12 +57,19 @@ body {
 }
 
 li {
-  padding: 1rem;
+  width: 200px;
+  height: 120px;
+  padding-bottom: 5rem;
   margin: 1rem;
   border-style: solid;
   border-color: #fafafa;
   -webkit-box-shadow: 5px 3px 3px #747474;
           box-shadow: 5px 3px 3px #747474;
+}
+
+img {
+  width: 101%;
+  height: 100%;
 }
 
 a {

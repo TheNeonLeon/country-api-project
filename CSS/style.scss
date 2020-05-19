@@ -45,11 +45,17 @@ body{
     margin: 2rem;
 }
 li{
-    padding: 1rem;
+    width: 200px;
+    height: 120px;
+    padding-bottom: 5rem;
     margin: 1rem;
     border-style: solid;
     border-color: hsl(0, 0%, 98%);
     box-shadow: 5px 3px 3px rgb(116, 116, 116);
+}
+img{
+    width: 101%;
+    height: 100%;
 }
 a{
     text-decoration: none;

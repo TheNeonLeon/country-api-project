@@ -1,5 +1,5 @@
 //fetching data from api and creating list item for each object
-document.getElementById('show-btn').addEventListener('click', loadData => {
+window.addEventListener('load', loadData => {
     fetch('https://restcountries.eu/rest/v2/all')
     .then(Response => Response.json())
     .then(data => {
@@ -39,6 +39,23 @@ document.querySelector(".input-field").addEventListener('onkeyup', filterCountry
         }
     }
 })
+function filter(){
+    var input, ul, li, filter, i;
+     input = document.querySelector('.input-field');
+     ul = document.getElementById("list");
+     li = ul.getElementsByTagName('li');
+     filter = input.value.toUpperCase();
+
+    for (i = 0; i < li.length; i++) {
+        var list = li[i].getElementsByTagName("li")[0];
+        var txtValue = list.textContent || list.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        }else {
+            li[i].style.display = "none";
+        }
+    }
+}
 document.getElementById('list').addEventListener('click', clickInfo => {
     
 })

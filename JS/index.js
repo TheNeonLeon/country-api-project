@@ -1,3 +1,4 @@
+//fetching data from api and creating list item for each object
 document.getElementById('show-btn').addEventListener('click', loadData => {
     fetch('https://restcountries.eu/rest/v2/all')
     .then(Response => Response.json())

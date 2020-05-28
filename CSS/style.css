@@ -67,12 +67,13 @@ body {
 li {
   width: 200px;
   height: 120px;
-  padding-bottom: 5rem;
+  padding-bottom: 6rem;
   margin: 1rem;
   border-style: solid;
   border-color: #fafafa;
   -webkit-box-shadow: 5px 3px 3px #747474;
           box-shadow: 5px 3px 3px #747474;
+  font-family: 'Nunito Sans';
 }
 
 img {

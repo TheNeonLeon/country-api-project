@@ -43,6 +43,14 @@ body {
   margin-left: -1rem;
 }
 
+.dropbtn {
+  float: right;
+  margin-top: -1.6rem;
+  margin-right: 4rem;
+  padding: 0.5rem;
+  border-style: none;
+}
+
 #list {
   display: -webkit-box;
   display: -ms-flexbox;

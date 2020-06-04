@@ -11,7 +11,9 @@ body{
     background-color: $mainColor;
 }
 .header{
-    display: flex;
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px 250px;
+    grid-template-rows: auto;
     border-style: solid;
     border-color: rgb(216, 216, 216);
     border-top: white;
@@ -25,7 +27,8 @@ body{
     padding-left: 2rem;
 }
 .about{
-    margin-left: 57rem;
+    grid-column: 5 / 5;
+    margin-left: 7rem;
 }
 #input-field{
     margin-top: 2rem;

@@ -27,7 +27,7 @@ window.addEventListener('load', loadData => {
 });*/
 //iterate through countries and filter by search query
 let filterInput = document.getElementById('input-field');
-filterInput.addEventListener('keyup', filterCountry);
+filterInput.addEventListener('keyup', filterCountry());
    
 function filterCountry(){
    let filterValue = document.getElementById('input-field').value.toUpperCase();

@@ -9,9 +9,12 @@ body {
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 250px 250px 250px 250px 250px;
+      grid-template-columns: 250px 250px 250px 250px 250px;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
   border-style: solid;
   border-color: #d8d8d8;
   border-top: white;
@@ -27,7 +30,9 @@ body {
 }
 
 .about {
-  margin-left: 57rem;
+  -ms-grid-column: 5;
+  grid-column: 5 / 5;
+  margin-left: 7rem;
 }
 
 #input-field {

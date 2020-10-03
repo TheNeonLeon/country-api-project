@@ -6,7 +6,8 @@ window.addEventListener('load', loadData => {
         let html = '';
         data.forEach(element => {
             html += `
-            <li><img src="${element.flag}">
+            <li><a href="info.html"</a>
+                <img src="${element.flag}">
                 <br> ${element.name}
                 <br> Capital: ${element.capital} 
                 <br> Population: ${element.population}
@@ -26,8 +27,15 @@ window.addEventListener('load', loadData => {
 
 });*/
 //iterate through countries and filter by search query
-let filterInput = document.getElementById('input-field');
-filterInput.addEventListener('keyup', filterCountry());
+
+function countryInfo() {
+
+}
+
+
+
+
+
    
 function filterCountry(){
    let filterValue = document.getElementById('input-field').value.toUpperCase();
@@ -43,6 +51,8 @@ function filterCountry(){
     }
   }
 }
+let filterInput = document.getElementById('input-field');
+filterInput.addEventListener('keyup', filterCountry());
 
 
    /* let input = document.querySelector('.input-field');

@@ -28,14 +28,6 @@ window.addEventListener('load', loadData => {
 });*/
 //iterate through countries and filter by search query
 
-function countryInfo() {
-
-}
-
-
-
-
-
    
 function filterCountry(){
    let filterValue = document.getElementById('input-field').value.toUpperCase();

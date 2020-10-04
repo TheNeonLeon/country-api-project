@@ -9,14 +9,25 @@ window.addEventListener('load', loadData => {
             <li><a href="info.html"</a>
                 <img src="${element.flag}">
                 <br> ${element.name}
-                <br> Capital: ${element.capital} 
+                <br> Capital: ${element.capital}
                 <br> Population: ${element.population}
             </li>
             `;
-            console.log(Response, data);
+            console.log(data);
+            function filterCountry(){
+            let filterValue = document.getElementById('input-field').value.toUpperCase();
+            let li = document.getElementsByTagName('li');
+
+            for(let i = 0; i < li.length; i++) {
+                html += element[i]
+              if (li.innerHTML.toUpperCase().indexOf(filterValue) > -1) {
+                li[i].style.display = '';
+            }
+          }
+        }
+        filterCountry();
         });
         document.getElementById('list').innerHTML = html;
-        
         
     });
     
@@ -29,7 +40,7 @@ window.addEventListener('load', loadData => {
 //iterate through countries and filter by search query
 
    
-function filterCountry(){
+/*function filterCountry(){
    let filterValue = document.getElementById('input-field').value.toUpperCase();
    let wrapper = document.getElementById('list');
    let li = wrapper.getElementsByTagName('li');
@@ -45,19 +56,3 @@ function filterCountry(){
 }
 let filterInput = document.getElementById('input-field');
 filterInput.addEventListener('keyup', filterCountry());
-
-
-   /* let input = document.querySelector('.input-field');
-    let ul = document.getElementById("list");
-    let li = ul.getElementsByTagName('li');
-    let filter = input.value.toUpperCase();
-
-    for (i = 0; i < li.length; i++) {
-        var list = li[i].getElementsByTagName("li")[0];
-        var txtValue = list.textContent || list.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        }else {
-            li[i].style.display = "none";
-        }
-    }*/

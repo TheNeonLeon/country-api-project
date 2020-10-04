@@ -55,4 +55,4 @@ window.addEventListener('load', loadData => {
   }
 }
 let filterInput = document.getElementById('input-field');
-filterInput.addEventListener('keyup', filterCountry());
+filterInput.addEventListener('keyup', filterCountry());*/
